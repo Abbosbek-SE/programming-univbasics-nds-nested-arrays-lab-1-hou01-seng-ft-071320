@@ -24,7 +24,12 @@ def assembled_matrix
 end
 
 def sorted_matrix
-  assembled_matrix.sort
+  new_array = assembled_matrix[0].sort
+  new_array_2 = assembled_matrix[1].sort
+  sorted_array = [
+    new_array,
+    new_array_2
+    ]
 end
 
 def matrix_lookup(matrix, row, column)
